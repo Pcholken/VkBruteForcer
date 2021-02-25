@@ -1,0 +1,1 @@
+rucaptcha_key = "ApiKEY here"
