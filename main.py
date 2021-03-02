@@ -72,11 +72,13 @@ if __name__ == '__main__':
 
     with open("base.txt") as file:
         base = file.read().split("\n")
-        base.remove("")
+        if "" in base:
+            base.remove("")
 
     with open("proxy.txt") as file:
         proxyes = file.read().split("\n")
-        proxyes.remove("")
+        if "" in proxyes:
+            proxyes.remove("")
 
     goods = open("goods.txt", 'a')
 
